@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="bookmark-style.css">
+  <title>Frontend Mentor | Bookmark landing page</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="main-header flex">
+    <div draggable="true" class="headers-insdie-wrapper flex">
+      <div class="logo-container">
+        <img src="images/logo-bookmark.svg" alt="Bookmark's logo">
+      </div>
+      <nav class="navigation flex">
+        <ul class="header-list flex">
+          <li><a title="features" href="#">FEATURES</a></li>
+          <li><a title="pricing" href="#">PRICING</a></li>
+          <li><a title="contact" href="#">CONTACT</a></li>
+          <li><button title="login" class="btn">LOGIN</button></li>
+        </ul>
+      </nav>
+      <button title="menu" class="menu-nav"></button>
+    </div>
+  </header>
+  <!-- header -->
+
+  <!--main-->
+  <main class="main">
+
+    <!-- hero-section -->
+    <section class="hero-section flex">
+      <div class="hero-section-wrapper flex">
+        <div class="hero-text flex">
+          <h1>A Simple Bookmark Manager</h1>
+          <p>
+            A clean and simple interface to organize your favourite websites. Open a new
+            browser tab and see your sites load instantly. Try it for free.
+          </p>
+          <div class="btn-container flex">
+            <button class="chr">Get it on Chrome</button>
+            <button class="fr">Get it on Firefox</button>
+          </div>
+        </div>
+        <div class="hero-pic flex">
+          <img src="images/illustration-hero.svg" alt="">
+          <div class="cruvy"></div>
+        </div>
+      </div>
+    </section>
+    <!-- hero-section -->
+
+    <!-- features-section -->
+    <section class="features-section flex">
+      <div class="first-section flex">
+        <div class="an-wrap flex">
+          <div class="txt">
+            <h1>Features</h1>
+            <p>
+              Our aim is to make it quick and easy for you to access your favourite websites.
+              Your bookmarks sync between your devices so you can access them on the go.
+            </p>
+          </div>
+          <nav class="features-navigation flex">
+            <ul draggable="true" class="fr-list flex">
+              <li id="c-1">Simple Bookmarking</li>
+              <li id="c-2">Speedy Searching</li>
+              <li id="c-3">Easy Sharing</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="slider-section flex">
+        <div class="slider-wrapper flex">
+          <div class="feature-pic-part flex">
+            <div class="img-holder">
+              <!-- <img src="images/illustration-features-tab-1.svg" alt=""> -->
+            </div>
+            <div class="cruvy"></div>
+          </div>
+          <div class="content-part flex">
+            <h1>Bookmark in one click</h1>
+            <p>
+              Organize your bookmarks however you like. Our simple drag-and-drop interface
+              gives you complete control over how you manage your favourite sites.
+            </p>
+            <button class="btn">More Info</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- features-section -->
+
+    <!-- applications-section -->
+    <section class="app-section">
+      <div class="app-wrap flex">
+        <div class="app-tx flex">
+          <h1> Download the extension</h1>
+          <p>
+            We’ve got more browsers in the pipeline. Please do let us know if you’ve
+            got a favourite you’d like us to prioritize.
+          </p>
+        </div>
+        <div class="app-cards-holder flex">
+          <div class="cards n-1">
+            <div class="content">
+              <div class="logo-holder"><img src="images/logo-chrome.svg" alt="google chrome logo"></div>
+              <div class="card-tx">
+                <h3>Add to Chrome</h3>
+                <p>Minimum version 62</p>
+              </div>
+            </div>
+            <button class="chr">Add & Install Extension</button>
+          </div>
+          <div class="cards n-2">
+            <div class="content">
+              <div class="logo-holder"><img src="images/logo-firefox.svg" alt="mozila firefox logo"></div>
+              <div class="card-tx">
+                <h3>Add to Firefox</h3>
+                <p>Minimum version 55</p>
+              </div>
+            </div>
+            <button class="chr">Add & Install Extension</button>
+          </div>
+          <div class="cards n-3">
+            <div class="content">
+              <div class="logo-holder"><img src="images/logo-opera.svg" alt="operas logo"></div>
+              <div class="card-tx">
+                <h3>Add to Opera</h3>
+                <p>Minimum version 46</p>
+              </div>
+            </div>
+            <button class="chr">Add & Install Extension</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- application-section -->
+
+    <!-- FAQ-SECTION -->
+    <section class="faq-section flex">
+      <div class="faq-wrapper flex">
+        <div class="faq-tx">
+          <h1>Frequently Asked Questions</h1>
+          <p>Here are some of our FAQs. If you have any other questions you’d like
+            answered please feel free to email us.</p>
+        </div>
+        <div class="faq-quandans">
+          <div class="blks">
+            <div class="question">
+              <p class="que">What is Bookmark?</p>
+              <img src="images/icon-arrow.svg" alt="">
+            </div>
+            <p class="answer">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+              justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis
+            </p>
+          </div>
+          <div class="blks">
+            <div class="question">
+              <p class="que">How can I request a new browser?</p>
+              <img src="images/icon-arrow.svg" alt="">
+            </div>
+            <p class="answer">
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
+              Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+              ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+              Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+            </p>
+          </div>
+          <div class="blks">
+            <div class="question">
+              <p class="que">Is there a mobile app?</p>
+              <img src="images/icon-arrow.svg" alt="">
+            </div>
+            <p class="answer">
+              Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
+              urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+              sollicitudin ex et ultricies bibendum.
+            </p>
+          </div>
+          <div class="blks">
+            <div class="question">
+              <p class="que">What about other Chromium browsers?</p>
+              <img src="images/icon-arrow.svg" alt="">
+            </div>
+            <p class="answer">
+              Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
+              vitae neque eget nisl gravida pellentesque non ut velit.
+            </p>
+          </div>
+        </div>
+        <button class="faq-btn">More Info</button>
+      </div>
+    </section>
+    <!-- FAQ-SECTION -->
+
+    <!-- contact-section -->
+    <section class="contact-section flex">
+      <div class="contact-section-wrapper flex">
+        <p class="users">
+          35,000+ already joined
+        </p>
+        <p class="exp"> Stay up-to-date with what we’re doing</p>
+        <form action="https://www.google.com" method="get" class="form">
+          <input type="email" id="ab" required="required" placeholder="Enter your email adress">
+          <input type="submit" id="cd" value="Contact Us">
+        </form>
+      </div>
+    </section>
+    <!-- contact-section -->
+  </main>
+  <!-- main -->
+
+  <!-- footer -->
+  <footer class="foot">
+    <div class="foot-container">
+    </div>
+  </footer>
+  <!-- footer -->
+
+  <script src="bookmark-script.js"></script>
+</body>
+
+</html>
