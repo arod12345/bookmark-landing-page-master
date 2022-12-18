@@ -10,7 +10,7 @@
   <title>Frontend Mentor | Bookmark landing page</title>
 </head>
 
-<body>
+<body data-set="true">
   <!-- header -->
   <header class="main-header flex">
     <div draggable="true" class="headers-insdie-wrapper flex">
@@ -154,9 +154,9 @@
           <div class="blks">
             <div class="question">
               <p class="que">What is Bookmark?</p>
-              <img src="images/icon-arrow.svg" alt="">
+              <img id="img-1" src="images/icon-arrow.svg" alt="">
             </div>
-            <p class="answer">
+            <p data-visible="false" id="q-1" class="answer">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
               justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis
             </p>
@@ -164,9 +164,9 @@
           <div class="blks">
             <div class="question">
               <p class="que">How can I request a new browser?</p>
-              <img src="images/icon-arrow.svg" alt="">
+              <img id="img-2" src="images/icon-arrow.svg" alt="">
             </div>
-            <p class="answer">
+            <p data-visible="false"  id="q-2"  class="answer">
               Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
               Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
               ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
@@ -176,9 +176,9 @@
           <div class="blks">
             <div class="question">
               <p class="que">Is there a mobile app?</p>
-              <img src="images/icon-arrow.svg" alt="">
+              <img id="img-3" src="images/icon-arrow.svg" alt="">
             </div>
-            <p class="answer">
+            <p data-visible="false"  id="q-3"  class="answer">
               Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
               urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
               sollicitudin ex et ultricies bibendum.
@@ -187,9 +187,9 @@
           <div class="blks">
             <div class="question">
               <p class="que">What about other Chromium browsers?</p>
-              <img src="images/icon-arrow.svg" alt="">
+              <img id="img-4" src="images/icon-arrow.svg" alt="">
             </div>
-            <p class="answer">
+            <p data-visible="false"  id="q-4"  class="answer">
               Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
               vitae neque eget nisl gravida pellentesque non ut velit.
             </p>
@@ -218,16 +218,26 @@
   <!-- main -->
 
   <!-- footer -->
-  <footer class="foot">
-    <div class="foot-container">
+  <footer class="foot flex">
+    <div class="foot-container flex">
+      <div class="foot-fr-side flex">
+        <div class="foot-logo">
+          <img src="images/logo-bookmark-copy.svg" alt="Bookmark logo">
+        </div>
+        <ul class="foot-list flex">
+          <li><a href="#">FEATURES</a></li>
+          <li><a href="#">PRICING</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="social-side flex">
+        <img src="images/icon-facebook.svg" alt="icon-facebook">
+        <img src="images/icon-twitter.svg" alt="icon-twitter">
+      </div>
     </div>
   </footer>
-  <!-- footer section end-->
-
-  <!-- script of the page -->
+  <!-- footer-->
   <script src="bookmark-script.js"></script>
-  <!-- script of the page -->
 </body>
 
 </html>
-<!-- just want to say that this is my first project take it   -->

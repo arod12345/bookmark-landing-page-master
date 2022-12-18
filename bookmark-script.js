@@ -45,23 +45,58 @@ simple.addEventListener('click', () => {
     imageFeature.style.background = ' url(images/illustration-features-tab-1.svg) no-repeat center center'
 });
 
+
+
+// const faqOne = document.getElementById('q-1');
+// const faqTwo = document.getElementById('q-2');
+// const faqThree = document.getElementById('q-3');
+// const faqFour = document.getElementById('q-4');
+
+// const imgOne = document.getElementById('img-1');
+// const imgTwo = document.getElementById('img-2');
+// const imgThree = document.getElementById('img-3');
+// const imgFour = document.getElementById('img-4');
+
+
+// imgOne.addEventListener('click', () => {
+//     faqOne.style.display = 'block';
+//     imgOne.style.transform = 'rotate(180deg)';
+// });
+
+// imgTwo.addEventListener('click', () => {
+//     faqTwo.style.display = 'block';
+//     imgTwo.style.transform = 'rotate(180deg)';
+// });
+
+// imgThree.addEventListener('click', () => {
+//     faqThree.style.display = 'block';
+//     imgThree.style.transform = 'rotate(180deg)';
+// });
+
+// imgFour.addEventListener('click', () => {
+//     faqFour.style.display = 'block';
+//     imgFour.style.transform = 'rotate(180deg)';
+// });
+
+
 const arrowDown = document.querySelectorAll('.question img');
-const revealeaContent = document.querySelectorAll('.answer');
+const revealeContent = document.querySelectorAll('.answer');
+const reavelArray = Array(revealeContent);
+
+console.log(revealeContent.length);
+
 
 arrowDown.forEach((ard) => {
     ard.addEventListener('click', () => {
-        ard.style.transform = 'rotate(180deg)';
-        revealeaContent.forEach((rvc) => {
-            rvc.style.display = 'block';
-        });
-    });
-});
-
-arrowDown.forEach((ard) => {
-    ard.addEventListener('click', () => {
-        ard.style.transform = 'rotate(180deg)';
-        revealeaContent.forEach((rvc) => {
-            rvc.style.display = 'none';
-        });
+        const visibility = revealeContent.forEach((hell) => {
+            const dope = hell.getAttribute("data-visible");
+            if (dope === "false") {
+                hell.setAttribute("data-visible", true);
+                ard.style.transform = 'rotate(180deg)';
+            } else if (dope === "true") {
+                hell.setAttribute("data-visible", false);
+                ard.style.transform = 'rotate(0deg)';
+            }
+        })
     });
 });
