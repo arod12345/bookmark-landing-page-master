@@ -51,6 +51,6 @@ This project currently is not responsive for tablet devices  i wanna work on tha
 ## Author
 
 - Website - [Abel Sisay](https://arod12345.github.io/bookmark-landing-page-master/)
-- Frontend Mentor - [@](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@arod12345](https://www.frontendmentor.io/profile/@arod12345)
 
 
