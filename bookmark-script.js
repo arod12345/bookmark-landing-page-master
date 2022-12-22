@@ -1,3 +1,4 @@
+// code for the click sliders
 const simple = document.getElementById('c-1');
 const speedy = document.getElementById('c-2');
 const easy = document.getElementById('c-3');
@@ -6,8 +7,10 @@ const title = document.querySelector('.content-part h1');
 const txt = document.querySelector('.content-part p');
 const imageFeature = document.querySelector('.img-holder');
 
+// simple styles for the page
 simple.style.color = 'var(--clr-very-dark-blue)';
 simple.style.borderBottom = '2px solid var(--clr-soft-Red)';
+// the end of simple styles
 
 speedy.addEventListener('click', () => {
     title.textContent = 'Intelligent search';
@@ -18,7 +21,7 @@ speedy.addEventListener('click', () => {
     simple.style.color = 'inherit';
     simple.style.borderBottom = 'none';
     txt.textContent = 'Our powerful search feature will help you find saved sites in no time at all.No need to trawl through all of your bookmarks.'
-    imageFeature.style.background = ' url(images/illustration-features-tab-2.svg) no-repeat center center'
+    imageFeature.style.background = ' url(images/illustration-features-tab-2.svg) no-repeat center center/contain'
 });
 
 easy.addEventListener('click', () => {
@@ -30,7 +33,7 @@ easy.addEventListener('click', () => {
     simple.style.color = 'inherit';
     simple.style.borderBottom = 'none';
     txt.textContent = 'Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.'
-    imageFeature.style.background = ' url(images/illustration-features-tab-3.svg) no-repeat center'
+    imageFeature.style.background = ' url(images/illustration-features-tab-3.svg) no-repeat center/contain'
 });
 
 simple.addEventListener('click', () => {
@@ -42,43 +45,12 @@ simple.addEventListener('click', () => {
     simple.style.color = 'var(--clr-very-dark-blue)';
     simple.style.borderBottom = '2px solid var(--clr-soft-Red)';
     txt.textContent = 'Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.'
-    imageFeature.style.background = ' url(images/illustration-features-tab-1.svg) no-repeat center center'
+    imageFeature.style.background = ' url(images/illustration-features-tab-1.svg) no-repeat center center/contain'
 });
 
+// code for the click sliders
 
-
-// const faqOne = document.getElementById('q-1');
-// const faqTwo = document.getElementById('q-2');
-// const faqThree = document.getElementById('q-3');
-// const faqFour = document.getElementById('q-4');
-
-// const imgOne = document.getElementById('img-1');
-// const imgTwo = document.getElementById('img-2');
-// const imgThree = document.getElementById('img-3');
-// const imgFour = document.getElementById('img-4');
-
-
-// imgOne.addEventListener('click', () => {
-//     faqOne.style.display = 'block';
-//     imgOne.style.transform = 'rotate(180deg)';
-// });
-
-// imgTwo.addEventListener('click', () => {
-//     faqTwo.style.display = 'block';
-//     imgTwo.style.transform = 'rotate(180deg)';
-// });
-
-// imgThree.addEventListener('click', () => {
-//     faqThree.style.display = 'block';
-//     imgThree.style.transform = 'rotate(180deg)';
-// });
-
-// imgFour.addEventListener('click', () => {
-//     faqFour.style.display = 'block';
-//     imgFour.style.transform = 'rotate(180deg)';
-// });
-
-
+// Feauterd Question Answer
 const arrowDown = document.querySelectorAll('.question img');
 const revealeContent = document.querySelectorAll('.answer');
 const reavelArray = Array(revealeContent);
@@ -99,4 +71,30 @@ arrowDown.forEach((ard) => {
             }
         })
     });
+});
+// Feauterd Question Answer
+
+const hamburgerMenu = document.querySelector('.menu-nav ');
+const navigation = document.querySelector('.navigation');
+const mainHeader = document.querySelector('.main-header');
+const firstLogo = document.querySelector('.logo-1');
+const secondLogo = document.querySelector('.logo-2');
+
+hamburgerMenu.addEventListener('click', () => {
+    const visible = navigation.getAttribute("data-visible");
+    if (visible === "false") {
+        navigation.setAttribute("data-visible", true);
+        navigation.style.display = 'flex'
+        hamburgerMenu.style.background = 'url(images/icon-close.svg) no-repeat center center';
+        mainHeader.style.backgroundColor = '#252b4695';
+        firstLogo.style.display='none';
+        secondLogo.style.display='block';
+    } else if (visible === "true") {
+        navigation.setAttribute("data-visible", false);
+        navigation.style.display = 'none'
+        hamburgerMenu.style.background = ' url(images/icon-hamburger.svg) no-repeat center center';
+        mainHeader.style.backgroundColor = 'transparent';
+        firstLogo.style.display='block';
+        secondLogo.style.display='none';
+    }
 });

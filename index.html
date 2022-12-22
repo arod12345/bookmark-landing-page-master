@@ -14,10 +14,14 @@
   <!-- header -->
   <header class="main-header flex">
     <div draggable="true" class="headers-insdie-wrapper flex">
-      <div class="logo-container">
-        <img src="images/logo-bookmark.svg" alt="Bookmark's logo">
+      <div class="fr-side flex">
+        <div class="logo-container flex">
+          <img class="logo-1" src="images/logo-bookmark.svg" alt="Bookmark's logo">
+          <img class="logo-2" style="display:none" src="images/logo-bookmark-copy.svg" alt="Bookmark's logo">
+        </div>
+        <button title="menu" class="menu-nav"></button>
       </div>
-      <nav class="navigation flex">
+      <nav data-visible="false" class="navigation flex">
         <ul class="header-list flex">
           <li><a title="features" href="#">FEATURES</a></li>
           <li><a title="pricing" href="#">PRICING</a></li>
@@ -25,7 +29,6 @@
           <li><button title="login" class="btn">LOGIN</button></li>
         </ul>
       </nav>
-      <button title="menu" class="menu-nav"></button>
     </div>
   </header>
   <!-- header -->
@@ -166,7 +169,7 @@
               <p class="que">How can I request a new browser?</p>
               <img id="img-2" src="images/icon-arrow.svg" alt="">
             </div>
-            <p data-visible="false"  id="q-2"  class="answer">
+            <p data-visible="false" id="q-2" class="answer">
               Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
               Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
               ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
@@ -178,7 +181,7 @@
               <p class="que">Is there a mobile app?</p>
               <img id="img-3" src="images/icon-arrow.svg" alt="">
             </div>
-            <p data-visible="false"  id="q-3"  class="answer">
+            <p data-visible="false" id="q-3" class="answer">
               Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
               urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
               sollicitudin ex et ultricies bibendum.
@@ -189,7 +192,7 @@
               <p class="que">What about other Chromium browsers?</p>
               <img id="img-4" src="images/icon-arrow.svg" alt="">
             </div>
-            <p data-visible="false"  id="q-4"  class="answer">
+            <p data-visible="false" id="q-4" class="answer">
               Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
               vitae neque eget nisl gravida pellentesque non ut velit.
             </p>
