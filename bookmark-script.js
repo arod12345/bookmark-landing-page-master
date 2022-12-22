@@ -50,12 +50,10 @@ simple.addEventListener('click', () => {
 
 // code for the click sliders
 
-// Feauterd Question Answer
+// Frequently asked Question 
 const arrowDown = document.querySelectorAll('.question img');
 const revealeContent = document.querySelectorAll('.answer');
 const reavelArray = Array(revealeContent);
-
-console.log(revealeContent.length);
 
 
 arrowDown.forEach((ard) => {
@@ -72,7 +70,7 @@ arrowDown.forEach((ard) => {
         })
     });
 });
-// Feauterd Question Answer
+// Frequently asked Question 
 
 const hamburgerMenu = document.querySelector('.menu-nav ');
 const navigation = document.querySelector('.navigation');
